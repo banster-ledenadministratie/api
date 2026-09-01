@@ -192,6 +192,10 @@ All entries on list `$listid`
 | sortDirection | string | sort direction | asc \| desc | desc |
 | status | string | entry status | active \| inactive \| pending \| refused | active |
 | searchQuery | string | search query | — | — |
+| tsCreatedStart | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
+| tsCreatedEnd | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
+| tsModifiedStart | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
+| tsModifiedEnd | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
 
 > Note: sortable fields may represent internal or derived fields and do not necessarily correspond 1-to-1 with keys in the returned entries payload.
 
@@ -226,7 +230,7 @@ curl -X POST "https://your-subdomain.banster.nl/api/v1/lists/1/entries/9" \
 
 ```json
 {
-  "request": "/api/v1/lists/1/entries/9",
+  "request": "/api/v1/lists/1/entries/12345",
   "status": "success",
   "code": 1000,
   "description": "Success",
@@ -304,6 +308,10 @@ All entries for event `$eventid`
 | sortDirection | string | sort direction | asc \| desc | desc |
 | status | string | entry status | active \| inactive \| pending \| refused | active |
 | searchQuery | string | search query | — | — |
+| tsCreatedStart | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
+| tsCreatedEnd | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
+| tsModifiedStart | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
+| tsModifiedEnd | date | date (dd-mm-yyyy) or datetime (dd-mm-yyyy hh:mm:ss) | — | — |
 
 > Note: sortable fields may represent internal or derived fields and do not necessarily correspond 1-to-1 with keys in the returned entries payload.
 
